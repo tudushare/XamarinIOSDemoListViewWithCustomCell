@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tu Du Share Demo View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="TuDuShareDemoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vdl-8o-vGe"/>
+                        <viewControllerLayoutGuide type="bottom" id="byT-M8-DFD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="3P1-zI-UER">
+                                <rect key="frame" x="0.0" y="68" width="320" height="500"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DemoTableViewCell" rowHeight="80" id="6jj-Un-C4O" customClass="DemoTableViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6jj-Un-C4O" id="piH-AV-2nY">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CxK-mX-cSB">
+                                                    <rect key="frame" x="8" y="29" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dc1-I7-T9z">
+                                                    <rect key="frame" x="242" y="4" width="70" height="72"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="Sq0-Fq-2rG"/>
+                                                        <constraint firstAttribute="height" constant="72" id="qG0-oS-wZB"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="CxK-mX-cSB" firstAttribute="leading" secondItem="piH-AV-2nY" secondAttribute="leadingMargin" id="Ceu-j3-hzc"/>
+                                                <constraint firstItem="dc1-I7-T9z" firstAttribute="trailing" secondItem="piH-AV-2nY" secondAttribute="trailingMargin" id="EZZ-2S-0Ul"/>
+                                                <constraint firstAttribute="centerY" secondItem="CxK-mX-cSB" secondAttribute="centerY" id="VC9-sy-PmW"/>
+                                                <constraint firstAttribute="centerY" secondItem="dc1-I7-T9z" secondAttribute="centerY" id="ti9-4c-uDA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cellImageView" destination="dc1-I7-T9z" id="N7m-PN-nbb"/>
+                                            <outlet property="cellLabel" destination="CxK-mX-cSB" id="52I-q3-MfF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TableView demo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KtG-Hy-KIH">
+                                <rect key="frame" x="97" y="20" width="126" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="byT-M8-DFD" firstAttribute="top" secondItem="3P1-zI-UER" secondAttribute="bottom" id="Bpt-lI-baC"/>
+                            <constraint firstItem="3P1-zI-UER" firstAttribute="top" secondItem="KtG-Hy-KIH" secondAttribute="bottom" constant="27" id="DCJ-lo-8cw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3P1-zI-UER" secondAttribute="trailing" constant="-16" id="bTq-EX-E2t"/>
+                            <constraint firstItem="KtG-Hy-KIH" firstAttribute="top" secondItem="Vdl-8o-vGe" secondAttribute="bottom" id="led-MU-zuj"/>
+                            <constraint firstAttribute="centerX" secondItem="KtG-Hy-KIH" secondAttribute="centerX" id="vV9-sS-W3x"/>
+                            <constraint firstItem="3P1-zI-UER" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="vk5-hh-9Tk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="demoTableView" destination="3P1-zI-UER" id="TfN-M8-DWR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="387"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

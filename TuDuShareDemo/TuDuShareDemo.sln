@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuDuShareDemo", "TuDuShareDemo\TuDuShareDemo.csproj", "{C7B644CE-9506-43CB-A4B7-851BB0455E39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7B644CE-9506-43CB-A4B7-851BB0455E39}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{C7B644CE-9506-43CB-A4B7-851BB0455E39}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{C7B644CE-9506-43CB-A4B7-851BB0455E39}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{C7B644CE-9506-43CB-A4B7-851BB0455E39}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{C7B644CE-9506-43CB-A4B7-851BB0455E39}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{C7B644CE-9506-43CB-A4B7-851BB0455E39}.Debug|iPhone.Build.0 = Debug|iPhone
+		{C7B644CE-9506-43CB-A4B7-851BB0455E39}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{C7B644CE-9506-43CB-A4B7-851BB0455E39}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{C7B644CE-9506-43CB-A4B7-851BB0455E39}.Release|iPhone.ActiveCfg = Release|iPhone
+		{C7B644CE-9506-43CB-A4B7-851BB0455E39}.Release|iPhone.Build.0 = Release|iPhone
+		{C7B644CE-9506-43CB-A4B7-851BB0455E39}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{C7B644CE-9506-43CB-A4B7-851BB0455E39}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+EndGlobal
